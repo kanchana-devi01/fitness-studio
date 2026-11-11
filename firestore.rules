@@ -1,0 +1,64 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper functions for security verification
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isPatient(patientId) {
+      return isAuthenticated() && (
+        request.auth.uid == patientId ||
+        request.auth.token.patientId == patientId ||
+        request.auth.token.email == patientId + "@gym.saaifitness.internal"
+      );
+    }
+
+    function isAdmin() {
+      return isAuthenticated() && (
+        request.auth.token.role == 'admin' ||
+        request.auth.token.admin == true
+      );
+    }
+
+    // Attendance Collection Rules
+    // Format: attendance/{patientId_YYYY-MM-DD}
+    match /attendance/{attendanceDocId} {
+      // Patients may only read their own daily attendance records.
+      // Administrators and trainers may view all records for studio monitoring.
+      allow read: if isAuthenticated() && (
+        resource.data.patientId == request.auth.uid ||
+        resource.data.patientId == request.auth.token.patientId ||
+        isAdmin()
+      );
+
+      // Secure Creation:
+      // Direct client creation requires verified authentication matching the patient ID,
+      // present status, server-side timestamp validation, and non-existence of document.
+      // Note: In production, attendance creation is handled via trusted Firebase Cloud Function.
+      allow create: if isAuthenticated() &&
+        (request.resource.data.patientId == request.auth.uid || request.resource.data.patientId == request.auth.token.patientId) &&
+        request.resource.data.status == 'present' &&
+        request.resource.data.locationVerified == true &&
+        request.resource.data.createdAt == request.time &&
+        !exists(/databases/$(database)/documents/attendance/$(attendanceDocId));
+
+      // Attendance records are strictly IMMUTABLE.
+      // Patients are prohibited from modifying or deleting attendance once logged.
+      allow update, delete: if isAdmin();
+    }
+
+    // Patient Profiles Collection
+    match /patients/{patientId} {
+      allow read: if isPatient(patientId) || isAdmin();
+      allow write: if isAdmin();
+    }
+
+    // Gym Configuration (Coordinates, Radius, Timezone)
+    match /config/gymLocation {
+      allow read: if isAuthenticated();
+      allow write: if isAdmin();
+    }
+  }
+}

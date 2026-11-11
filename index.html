@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saai Fitness Studio — Train Like Legacy | Old Money Luxury Gym</title>
+    <meta name="description" content="Saai Fitness Studio offers CrossFit, Personal Training, Natural Yoga, 120 Days Weight Loss & Gain Challenges in an elite Old Money private gym setting.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css?v=3">
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="navbar-header" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="brand-logo" id="brand-logo-link">
+                <img src="assets/images/logo.jpg?v=3" alt="Saai Fitness Studio Logo" class="brand-logo-img" style="width: 46px; height: 46px; border-radius: 50%; object-fit: cover; border: 2px solid #c5a059; flex-shrink: 0; display: inline-block;">
+                <span class="logo-text">Saai Fitness Studio</span>
+            </a>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#trainers" class="nav-link">Trainers</a>
+                <a href="#membership" class="nav-link">Membership</a>
+                <a href="#fees" class="nav-link">Fees</a>
+                <a href="#attendance" class="nav-link nav-attendance-link"><i class="fa-solid fa-calendar-check"></i> Daily Login</a>
+                <a href="#enquiry" class="nav-link">Enquiry</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-tag">ESTABLISHED MMXII &bull; PRIVATE ATHLETIC STUDIO</div>
+            <h1 class="hero-title">SAAI FITNESS STUDIO <span class="title-sub">— Train Like Legacy</span></h1>
+            <p class="hero-description">
+                Master Strength Training, CrossFit, Natural Yoga, and the renowned 120 Days Weight Loss & Weight Gain Challenge under master guidance.
+            </p>
+            <div class="hero-cta-group">
+                <button class="btn btn-primary open-booking-modal" id="hero-join-btn">
+                    <span>Join Now</span> <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <a href="#attendance" class="btn btn-secondary" id="hero-portal-btn">
+                    <i class="fa-solid fa-user-check"></i> <span>Daily Member Login</span>
+                </a>
+            </div>
+            
+            <div class="hero-features-bar">
+                <div class="hero-feature-item">
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <span>CrossFit & PT</span>
+                </div>
+                <div class="hero-feature-item">
+                    <i class="fa-solid fa-spa"></i>
+                    <span>Natural Yoga</span>
+                </div>
+                <div class="hero-feature-item">
+                    <i class="fa-solid fa-trophy"></i>
+                    <span>120 Days Challenge</span>
+                </div>
+                <div class="hero-feature-item">
+                    <i class="fa-solid fa-id-card"></i>
+                    <span>Daily Attendance Log</span>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down-indicator" aria-label="Scroll Down">
+            <span>EXPLORE</span>
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section (Split Screen + Stats Counter) -->
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image-wrapper reveal-left">
+                    <div class="image-frame">
+                        <img src="assets/images/about_gym.jpg" alt="Saai Fitness Studio Sanctuary" class="about-img">
+                        <div class="image-badge">
+                            <span class="badge-number">12+</span>
+                            <span class="badge-label">Years of Excellence</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content reveal-right">
+                    <div class="section-subtitle">THE PHILOSOPHY</div>
+                    <h2 class="section-title">Authentic Discipline & Physical Mastery</h2>
+                    <p class="about-text">
+                        Founded on the timeless principles of physical culture and natural wellness, <strong>Saai Fitness Studio</strong> is a premier athletic studio. We offer specialized training streams including high-intensity CrossFit, 1-on-1 Personal Training (PT), Natural Yoga, and structured 120-Day Body Transformations.
+                    </p>
+                    <p class="about-text">
+                        Whether your objective is rapid weight loss, muscle gain, posture restoration, or mental peace, our dedicated master coaches provide unwavering support in a distraction-free Old Money environment.
+                    </p>
+
+                    <!-- Stats Counter in Maroon Numbers -->
+                    <div class="stats-grid" id="stats-counter">
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="12">0</div>
+                            <div class="stat-plus">+</div>
+                            <div class="stat-label">Years of Heritage</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="2500">0</div>
+                            <div class="stat-plus">+</div>
+                            <div class="stat-label">Active Members</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="15">0</div>
+                            <div class="stat-plus">+</div>
+                            <div class="stat-label">Master Trainers</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="99">0</div>
+                            <div class="stat-percent">%</div>
+                            <div class="stat-label">Success Rate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section (3-Column Grid + Hover Overlay + Filters + Lightbox) -->
+    <section id="gallery" class="gallery-section section-padding">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <div class="section-subtitle">VISUAL GALLERY</div>
+                <h2 class="section-title">Gym Interior & Training Architecture</h2>
+                <p class="section-description">A glimpse into our state-of-the-art CrossFit arena, strength equipment, and Natural Yoga suite.</p>
+            </div>
+
+            <div class="gallery-filters reveal-up">
+                <button class="filter-btn active" data-filter="all">All Photos</button>
+                <button class="filter-btn" data-filter="strength">Strength & CrossFit</button>
+                <button class="filter-btn" data-filter="yoga">Natural Yoga</button>
+                <button class="filter-btn" data-filter="pt">120 Days Challenge</button>
+            </div>
+
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Item 1 -->
+                <div class="gallery-item reveal-up" data-category="strength">
+                    <div class="gallery-card">
+                        <img src="assets/images/hero_bg.jpg" alt="CrossFit & Strength Arena" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <span class="gallery-category">CrossFit & Strength</span>
+                                <h3 class="gallery-item-title">Main Heavy Iron Hall</h3>
+                                <p class="gallery-item-desc">Dark mahogany paneling & custom Olympic barbells.</p>
+                                <span class="gallery-icon"><i class="fa-solid fa-expand"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="gallery-item reveal-up" data-category="yoga">
+                    <div class="gallery-card">
+                        <img src="assets/images/about_gym.jpg" alt="Natural Yoga Sanctuary" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <span class="gallery-category">Natural Yoga</span>
+                                <h3 class="gallery-item-title">Mind & Flexibility Suite</h3>
+                                <p class="gallery-item-desc">Serene ambient lighting for authentic yoga & pranayama.</p>
+                                <span class="gallery-icon"><i class="fa-solid fa-expand"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="gallery-item reveal-up" data-category="pt">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80" alt="120 Days Challenge Zone" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <span class="gallery-category">120 Days Challenge</span>
+                                <h3 class="gallery-item-title">Personal Training Zone</h3>
+                                <p class="gallery-item-desc">1-on-1 weight loss and muscle building station.</p>
+                                <span class="gallery-icon"><i class="fa-solid fa-expand"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="gallery-item reveal-up" data-category="strength">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=1200&q=80" alt="Cardio CrossFit Station" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <span class="gallery-category">Strength & CrossFit</span>
+                                <h3 class="gallery-item-title">Cardio CrossFit Rig</h3>
+                                <p class="gallery-item-desc">Heavy kettlebells and endurance conditioning gear.</p>
+                                <span class="gallery-icon"><i class="fa-solid fa-expand"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="gallery-item reveal-up" data-category="yoga">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=1200&q=80" alt="Natural Yoga Asana Session" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <span class="gallery-category">Natural Yoga</span>
+                                <h3 class="gallery-item-title">Asana & Alignment Arena</h3>
+                                <p class="gallery-item-desc">Guided posture correction and joint mobility.</p>
+                                <span class="gallery-icon"><i class="fa-solid fa-expand"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="gallery-item reveal-up" data-category="pt">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=1200&q=80" alt="Transformation Measurements" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <span class="gallery-category">120 Days Challenge</span>
+                                <h3 class="gallery-item-title">Transformation Assessment</h3>
+                                <p class="gallery-item-desc">Biweekly progress tracking & custom nutrition coaching.</p>
+                                <span class="gallery-icon"><i class="fa-solid fa-expand"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainers Section (Ivory Cards on Dark Background) -->
+    <section id="trainers" class="trainers-section section-padding">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <div class="section-subtitle">EXPERT COACHES</div>
+                <h2 class="section-title">Our Master Trainers</h2>
+                <p class="section-description">Dedicated professionals guiding your strength, yoga, and 120-day body transformation.</p>
+            </div>
+
+            <div class="trainers-grid">
+                <!-- Trainer 1: Velu Master -->
+                <div class="trainer-card reveal-up">
+                    <div class="trainer-img-wrapper">
+                        <img src="assets/images/trainer_velu.jpg" alt="Velu Master">
+                        <div class="trainer-socials">
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="trainer-info">
+                        <span class="trainer-spec">Head Coach & Master Trainer</span>
+                        <h3 class="trainer-name">Velu Master</h3>
+                        <div class="trainer-skills-tags">
+                            <span class="skill-tag">Strength Training</span>
+                            <span class="skill-tag">CrossFit</span>
+                            <span class="skill-tag">Cardio CrossFit</span>
+                            <span class="skill-tag">Personal Training (PT)</span>
+                            <span class="skill-tag highlight-tag">120 Days Challenge</span>
+                        </div>
+                        <p class="trainer-bio">
+                            Over 14+ years of expertise in high-intensity CrossFit, strength architecture, and personal coaching. Creator of the famous 120 Days Weight Loss & Weight Gain Challenge program.
+                        </p>
+                        <button class="btn btn-outline-dark open-booking-modal" data-trainer="Velu Master">Book PT with Velu Master</button>
+                    </div>
+                </div>
+
+                <!-- Trainer 2: Natural Yoga Madam -->
+                <div class="trainer-card reveal-up">
+                    <div class="trainer-img-wrapper">
+                        <img src="assets/images/trainer_yoga.jpg" alt="Natural Yoga Madam">
+                        <div class="trainer-socials">
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="trainer-info">
+                        <span class="trainer-spec">Lead Yoga Master & Holistic Practitioner</span>
+                        <h3 class="trainer-name">Natural Yoga Madam</h3>
+                        <div class="trainer-skills-tags">
+                            <span class="skill-tag">Natural Yoga</span>
+                            <span class="skill-tag">Pranayama</span>
+                            <span class="skill-tag">Flexibility & Mobility</span>
+                            <span class="skill-tag">Mindfulness</span>
+                        </div>
+                        <p class="trainer-bio">
+                            Specialized in authentic Natural Yoga, spine alignment, deep flexibility, and stress-release breathwork. Helping members achieve holistic harmony and injury recovery.
+                        </p>
+                        <button class="btn btn-outline-dark open-booking-modal" data-trainer="Natural Yoga Madam">Book Yoga Session</button>
+                    </div>
+                </div>
+
+                <!-- Trainer 3: Julian Sterling -->
+                <div class="trainer-card reveal-up">
+                    <div class="trainer-img-wrapper">
+                        <img src="assets/images/trainer_3.jpg" alt="Julian Sterling">
+                        <div class="trainer-socials">
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="trainer-info">
+                        <span class="trainer-spec">Senior Biomechanics Coach</span>
+                        <h3 class="trainer-name">Julian Sterling</h3>
+                        <div class="trainer-skills-tags">
+                            <span class="skill-tag">Hypertrophy</span>
+                            <span class="skill-tag">Conditioning</span>
+                            <span class="skill-tag">Posture Correction</span>
+                        </div>
+                        <p class="trainer-bio">
+                            Certified strength specialist focusing on executive physical conditioning, posture alignment, and muscular balance for long-term health.
+                        </p>
+                        <button class="btn btn-outline-dark open-booking-modal" data-trainer="Julian Sterling">Book Session</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Section (Plan Cards: Monthly / Quarterly / Half-Yearly / Yearly) -->
+    <section id="membership" class="membership-section section-padding">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <div class="section-subtitle">MEMBERSHIP PLANS</div>
+                <h2 class="section-title">Flexible & Value Membership Tiers</h2>
+                <p class="section-description">Choose a package that suits your fitness journey. All plans include full facility access and attendance logging.</p>
+            </div>
+
+            <div class="membership-grid">
+                <!-- Monthly Plan -->
+                <div class="plan-card reveal-up">
+                    <div class="plan-tag">1 MONTH</div>
+                    <h3 class="plan-title">Monthly Plan</h3>
+                    <div class="plan-price">
+                        <span class="currency">₹</span><span class="amount">2,500</span><span class="period">/ month</span>
+                    </div>
+                    <p class="plan-desc">Ideal for short-term goals and flexible training schedules.</p>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> Unlimited Gym & CrossFit Access</li>
+                        <li><i class="fa-solid fa-check"></i> General Floor Coaching</li>
+                        <li><i class="fa-solid fa-check"></i> Daily Login & Attendance Tracking</li>
+                        <li><i class="fa-solid fa-check"></i> Locker & Shower Facilities</li>
+                    </ul>
+                    <button class="btn btn-secondary plan-btn open-booking-modal" data-plan="Monthly Plan">Join This Plan</button>
+                </div>
+
+                <!-- Quarterly Plan (Featured Maroon) -->
+                <div class="plan-card plan-featured reveal-up">
+                    <div class="plan-badge">MOST POPULAR</div>
+                    <div class="plan-tag">3 MONTHS</div>
+                    <h3 class="plan-title">Quarterly Plan</h3>
+                    <div class="plan-price">
+                        <span class="currency">₹</span><span class="amount">6,500</span><span class="period">/ 3 months</span>
+                    </div>
+                    <p class="plan-desc">Save ₹1,000 + includes body composition assessments.</p>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> All Monthly Plan Benefits</li>
+                        <li><i class="fa-solid fa-check"></i> Free Diet Chart & Calorie Guide</li>
+                        <li><i class="fa-solid fa-check"></i> Biweekly Weight & BMI Check</li>
+                        <li><i class="fa-solid fa-check"></i> 1 Natural Yoga Complimentary Class</li>
+                    </ul>
+                    <button class="btn btn-primary plan-btn open-booking-modal" data-plan="Quarterly Plan">Join This Plan</button>
+                </div>
+
+                <!-- Half-Yearly Plan -->
+                <div class="plan-card reveal-up">
+                    <div class="plan-tag">6 MONTHS</div>
+                    <h3 class="plan-title">Half-Yearly Plan</h3>
+                    <div class="plan-price">
+                        <span class="currency">₹</span><span class="amount">11,500</span><span class="period">/ 6 months</span>
+                    </div>
+                    <p class="plan-desc">Great commitment for serious strength and body transformation.</p>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> All Quarterly Plan Benefits</li>
+                        <li><i class="fa-solid fa-check"></i> Free 1-on-1 PT Consultation</li>
+                        <li><i class="fa-solid fa-check"></i> Natural Yoga Batch Included</li>
+                        <li><i class="fa-solid fa-check"></i> Priority Locker Access</li>
+                    </ul>
+                    <button class="btn btn-secondary plan-btn open-booking-modal" data-plan="Half-Yearly Plan">Join This Plan</button>
+                </div>
+
+                <!-- Yearly VIP Plan -->
+                <div class="plan-card reveal-up">
+                    <div class="plan-tag">12 MONTHS</div>
+                    <h3 class="plan-title">Yearly VIP Plan</h3>
+                    <div class="plan-price">
+                        <span class="currency">₹</span><span class="amount">20,000</span><span class="period">/ year</span>
+                    </div>
+                    <p class="plan-desc">Maximum savings & full executive athletic suite access.</p>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> All Half-Yearly Plan Benefits</li>
+                        <li><i class="fa-solid fa-check"></i> 3 Free Dedicated PT Sessions with Velu Master</li>
+                        <li><i class="fa-solid fa-check"></i> Unlimited Yoga & CrossFit Access</li>
+                        <li><i class="fa-solid fa-check"></i> Free SFS Merch & Shaker</li>
+                    </ul>
+                    <button class="btn btn-secondary plan-btn open-booking-modal" data-plan="Yearly VIP Plan">Join This Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fees Details Section (Service Fee Breakdown + Member Due Date Board) -->
+    <section id="fees" class="fees-section section-padding">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <div class="section-subtitle">TRANSPARENT PRICING</div>
+                <h2 class="section-title">Fees Details & Service Structure</h2>
+                <p class="section-description">Clear breakdown of individual training programs and member fee payment schedules.</p>
+            </div>
+
+            <!-- Service Fee Cards -->
+            <div class="fees-grid reveal-up">
+                <div class="fee-card">
+                    <div class="fee-icon"><i class="fa-solid fa-dumbbell"></i></div>
+                    <h3 class="fee-name">CrossFit & General Gym</h3>
+                    <div class="fee-price">₹2,500 <span>/ month</span></div>
+                    <p class="fee-desc">Full access to cardio, strength area, and daily CrossFit workout batches.</p>
+                </div>
+
+                <div class="fee-card fee-highlight">
+                    <div class="fee-badge">FEATURED</div>
+                    <div class="fee-icon"><i class="fa-solid fa-user-shield"></i></div>
+                    <h3 class="fee-name">Personal Training (PT)</h3>
+                    <div class="fee-price">₹6,000 <span>/ month</span></div>
+                    <p class="fee-desc">Dedicated 1-on-1 daily coaching with Velu Master or senior trainer.</p>
+                </div>
+
+                <div class="fee-card">
+                    <div class="fee-icon"><i class="fa-solid fa-spa"></i></div>
+                    <h3 class="fee-name">Natural Yoga</h3>
+                    <div class="fee-price">₹2,000 <span>/ month</span></div>
+                    <p class="fee-desc">Guided sessions with Natural Yoga Madam focusing on flexibility & pranayama.</p>
+                </div>
+
+                <div class="fee-card">
+                    <div class="fee-icon"><i class="fa-solid fa-fire"></i></div>
+                    <h3 class="fee-name">120 Days Challenge</h3>
+                    <div class="fee-price">₹12,000 <span>/ 4 months</span></div>
+                    <p class="fee-desc">Complete Weight Loss or Weight Gain transformation package with custom diet.</p>
+                </div>
+            </div>
+
+            <!-- Member Due Date Lookup Widget -->
+            <div class="due-dates-box reveal-up">
+                <h3 class="box-title"><i class="fa-solid fa-clock-rotate-left"></i> Member Fee Status & Payment Schedule</h3>
+                <p class="box-sub">Members can search their Member ID below to check their current plan, fee status, and next payment due date.</p>
+
+                <div class="due-search-row">
+                    <input type="text" id="due-search-input" class="form-control" placeholder="Enter Member ID (e.g., SFS001, SFS002, SFS003)">
+                    <button id="due-search-btn" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Search Fee Status</button>
+                </div>
+
+                <div id="due-status-result" class="due-status-result">
+                    <!-- Dynamic search result rendered via JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Login & Attendance System Section -->
+    <section id="attendance" class="attendance-section section-padding">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <div class="section-subtitle">DAILY MEMBER PORTAL</div>
+                <h2 class="section-title">Daily Login & Attendance System</h2>
+                <p class="section-description">Members log in daily to auto-record attendance and view fee deadline alerts.</p>
+            </div>
+
+            <div class="attendance-container reveal-up">
+                
+                <!-- LOGIN FORM PANEL (Shown when logged out) -->
+                <div id="login-panel" class="attendance-card">
+                    <div class="card-header-icon"><i class="fa-solid fa-id-card"></i></div>
+                    <h3 class="card-title">Daily Patient / Member Attendance Portal</h3>
+                    <p class="card-subtitle">Authenticate with your Patient User ID & registered mobile number to verify gym presence and record daily attendance.</p>
+
+                    <!-- Quick Demo Accounts Switcher -->
+                    <div class="demo-accounts-box">
+                        <span class="demo-label"><i class="fa-solid fa-flask"></i> Quick Demo Accounts (Click to Auto-Fill):</span>
+                        <div class="demo-btn-group">
+                            <button type="button" class="demo-user-btn" data-id="SFS001" data-phone="9876543210">
+                                <strong>SFS001</strong> &bull; Mobile: 9876543210 (Rajesh Kumar - Fee Due Tomorrow ⚠️)
+                            </button>
+                            <button type="button" class="demo-user-btn" data-id="SFS002" data-phone="9876543211">
+                                <strong>SFS002</strong> &bull; Mobile: 9876543211 (Anita Sharma - Fee Paid ✅)
+                            </button>
+                            <button type="button" class="demo-user-btn" data-id="SFS003" data-phone="9876543212">
+                                <strong>SFS003</strong> &bull; Mobile: 9876543212 (Vikram Singh - Fee Overdue 🔴)
+                            </button>
+                        </div>
+                    </div>
+
+                    <form id="attendance-login-form" class="attendance-form" novalidate>
+                        <div class="form-group">
+                            <label for="login-member-id">Patient / Member User ID *</label>
+                            <input type="text" id="login-member-id" class="form-control" placeholder="e.g. SFS001" required autocomplete="username">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="login-password">Registered Mobile Number (Password) *</label>
+                            <div class="password-input-wrapper">
+                                <input type="password" id="login-password" class="form-control" placeholder="e.g. 9876543210" required autocomplete="current-password">
+                                <button type="button" id="toggle-password-btn" class="password-toggle-btn" aria-label="Toggle password visibility">
+                                    <i class="fa-solid fa-eye" id="toggle-password-icon"></i>
+                                </button>
+                            </div>
+                            <span class="form-helper-text"><i class="fa-solid fa-shield-halved"></i> Authenticates against registered patient records via Firebase</span>
+                        </div>
+
+                        <!-- Live Geolocation & Verification Status Banner -->
+                        <div id="login-location-status" class="login-location-status">
+                            <div class="location-status-icon"><i class="fa-solid fa-location-crosshairs" id="location-status-icon"></i></div>
+                            <div class="location-status-text">
+                                <strong id="location-status-title">Gym Geolocation Verification Required</strong>
+                                <p id="location-status-desc">Device GPS will verify presence within gym premises (<span id="gym-radius-label">150m</span> radius) upon login.</p>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary form-submit-btn" id="attendance-submit-btn">
+                            <span id="btn-text">Verify Location & Mark Attendance</span> <i class="fa-solid fa-location-dot" id="btn-icon"></i>
+                        </button>
+                    </form>
+
+                    <!-- Admin Location Geofence Settings Link -->
+                    <div class="attendance-footer-tools">
+                        <button type="button" id="admin-config-btn" class="admin-link-btn">
+                            <i class="fa-solid fa-sliders"></i> Configure Gym Location & Radius (Admin)
+                        </button>
+                    </div>
+                </div>
+
+                <!-- MEMBER DASHBOARD PANEL (Shown after successful login) -->
+                <div id="member-dashboard" class="attendance-card dashboard-card" style="display: none;">
+                    
+                    <!-- FEE DEADLINE ALERT BANNER (Shown if due in 1 day or overdue) -->
+                    <div id="fee-alert-banner" class="fee-alert-banner" style="display: none;">
+                        <div class="alert-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                        <div class="alert-content">
+                            <h4 id="alert-title">Fee Deadline Alert!</h4>
+                            <p id="alert-message">Your fee payment is due tomorrow. Please renew your plan at the desk.</p>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-header">
+                        <div class="user-profile-summary">
+                            <div class="user-avatar" id="dash-avatar">RK</div>
+                            <div>
+                                <h3 class="user-name" id="dash-name">Rajesh Kumar</h3>
+                                <p class="user-meta">Patient / Member ID: <strong id="dash-id">SFS001</strong> &bull; Plan: <span id="dash-plan">CrossFit + PT</span></p>
+                            </div>
+                        </div>
+                        <button id="logout-btn" class="btn btn-secondary logout-btn"><i class="fa-solid fa-right-from-bracket"></i> Logout</button>
+                    </div>
+
+                    <!-- Attendance Confirmation / Status Card -->
+                    <div class="attendance-status-badge" id="attendance-status-banner">
+                        <i class="fa-solid fa-circle-check" id="attendance-status-icon"></i>
+                        <div class="attendance-status-content">
+                            <div class="status-top-row">
+                                <strong id="attendance-status-heading">Today's Attendance Recorded!</strong>
+                                <span class="attendance-pill" id="attendance-verified-pill"><i class="fa-solid fa-shield-check"></i> GPS Verified</span>
+                            </div>
+                            <p id="dash-timestamp">Date & Time: 15 Oct 2026, 06:45 PM</p>
+                            <p id="dash-location-meta" class="dash-location-meta"><i class="fa-solid fa-location-dot"></i> Verified Location: Within Gym Premises (<span id="dash-distance">~18m</span> away)</p>
+                            <p id="dash-doc-id" class="dash-doc-id">Firestore Record: <code id="doc-id-text">attendance/SFS001_2026-10-15</code></p>
+                        </div>
+                    </div>
+
+                    <!-- Member Fee Information Summary -->
+                    <div class="dashboard-fee-details">
+                        <div class="fee-detail-item">
+                            <span class="detail-label">Service Plan</span>
+                            <strong class="detail-val" id="fee-detail-plan">CrossFit & PT</strong>
+                        </div>
+                        <div class="fee-detail-item">
+                            <span class="detail-label">Monthly Fee</span>
+                            <strong class="detail-val" id="fee-detail-amount">₹2,500</strong>
+                        </div>
+                        <div class="fee-detail-item">
+                            <span class="detail-label">Payment Due Date</span>
+                            <strong class="detail-val highlight-due" id="fee-detail-duedate">28 Sep 2026</strong>
+                        </div>
+                        <div class="fee-detail-item">
+                            <span class="detail-label">Payment Status</span>
+                            <span class="status-badge" id="fee-detail-status">Due Tomorrow</span>
+                        </div>
+                    </div>
+
+                    <!-- Attendance History Calendar Grid -->
+                    <div class="calendar-wrapper">
+                        <div class="calendar-header-row">
+                            <h4 id="calendar-month-title"><i class="fa-solid fa-calendar-days"></i> Monthly Attendance Log</h4>
+                            <div class="calendar-legend">
+                                <span class="legend-item"><span class="legend-box present-box"></span> Present</span>
+                                <span class="legend-item"><span class="legend-box today-box"></span> Today</span>
+                            </div>
+                        </div>
+                        
+                        <div class="calendar-grid" id="calendar-grid">
+                            <!-- Dynamic days rendered by JavaScript -->
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Enquiry Section -->
+    <section id="enquiry" class="enquiry-section section-padding">
+        <div class="container">
+            <div class="enquiry-grid">
+                <div class="enquiry-form-box reveal-left">
+                    <div class="section-subtitle">START YOUR JOURNEY</div>
+                    <h2 class="section-title">Send An Enquiry</h2>
+                    <p class="enquiry-subtext">Interested in CrossFit, Natural Yoga, PT, or the 120 Days Challenge? Fill out the form below and our team will call you back.</p>
+
+                    <form id="enquiry-form" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="enquiry-name">Full Name *</label>
+                            <input type="text" id="enquiry-name" name="name" class="form-control" placeholder="e.g. Rahul Sharma" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="enquiry-phone">Phone Number *</label>
+                            <input type="tel" id="enquiry-phone" name="phone" class="form-control" placeholder="+91 98765 43210" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="enquiry-email">Email Address</label>
+                            <input type="email" id="enquiry-email" name="email" class="form-control" placeholder="rahul@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="enquiry-interest">Interested In *</label>
+                            <select id="enquiry-interest" name="interest" class="form-control" required>
+                                <option value="CrossFit">CrossFit & Strength Training</option>
+                                <option value="Natural Yoga">Natural Yoga Sessions</option>
+                                <option value="Personal Training">1-on-1 Personal Training (PT)</option>
+                                <option value="120 Days Weight Loss">120 Days Challenge — Weight Loss</option>
+                                <option value="120 Days Weight Gain">120 Days Challenge — Weight Gain</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="enquiry-message">Message / Questions</label>
+                            <textarea id="enquiry-message" name="message" class="form-control" rows="3" placeholder="Mention your preferred timings or fitness goals..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit-btn" id="enquiry-submit-btn">
+                            <span>Submit Enquiry</span> <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="enquiry-info-box reveal-right">
+                    <div class="info-card">
+                        <h3 class="info-title">Why Choose Saai Fitness Studio?</h3>
+                        <div class="why-item">
+                            <i class="fa-solid fa-trophy"></i>
+                            <div>
+                                <strong>Velu Master's 120 Days Challenge</strong>
+                                <p>Proven track record of hundreds of successful body transformations.</p>
+                            </div>
+                        </div>
+                        <div class="why-item">
+                            <i class="fa-solid fa-spa"></i>
+                            <div>
+                                <strong>Authentic Natural Yoga</strong>
+                                <p>Holistic health, posture alignment, and stress management with Natural Yoga Madam.</p>
+                            </div>
+                        </div>
+                        <div class="why-item">
+                            <i class="fa-solid fa-clock"></i>
+                            <div>
+                                <strong>Convenient Batch Timings</strong>
+                                <p>Morning Batches: 5:00 AM – 10:00 AM<br>Evening Batches: 4:30 PM – 9:30 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info-box reveal-left">
+                    <div class="info-card">
+                        <h3 class="info-title">Studio Location & Contact</h3>
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <strong>Saai Fitness Studio HQ</strong>
+                                <p>458 Kensington Estate Way, Suite 100<br>Mayfair District, NY 10021</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <strong>Direct Phone</strong>
+                                <p><a href="tel:+18005557224">+1 (800) 555-SAAI (7224)</a></p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <strong>General Contact Email</strong>
+                                <p><a href="mailto:info@saaifitness.com">info@saaifitness.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fa-solid fa-clock"></i>
+                            <div>
+                                <strong>Working Hours</strong>
+                                <p>Monday – Saturday: 5:00 AM – 10:00 PM</p>
+                                <p>Sunday: 6:00 AM – 1:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom Styled Google Map Embed -->
+                <div class="contact-map-box reveal-right">
+                    <div class="map-container">
+                        <iframe 
+                            title="Saai Fitness Studio Location Map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.11976397304603!3d40.69767011778233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus" 
+                            width="100%" 
+                            height="340" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="brand-logo">
+                        <img src="assets/images/logo.jpg?v=3" alt="Saai Fitness Studio Logo" class="brand-logo-img" style="width: 46px; height: 46px; border-radius: 50%; object-fit: cover; border: 2px solid #c5a059; flex-shrink: 0; display: inline-block;">
+                        <span class="logo-text">Saai Fitness Studio</span>
+                    </a>
+                    <p class="footer-tagline">Train Like Legacy. Specialized CrossFit, Natural Yoga, PT, and 120 Days Challenge.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Studio</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#trainers">Trainers</a></li>
+                        <li><a href="#membership">Membership Plans</a></li>
+                        <li><a href="#fees">Fees Details</a></li>
+                        <li><a href="#attendance">Daily Login</a></li>
+                        <li><a href="#enquiry">Enquiry</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Specialties</h4>
+                    <ul>
+                        <li><a href="#trainers">Velu Master — CrossFit & PT</a></li>
+                        <li><a href="#trainers">Natural Yoga Madam — Yoga</a></li>
+                        <li><a href="#fees">120 Days Weight Loss Challenge</a></li>
+                        <li><a href="#fees">120 Days Weight Gain Challenge</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Newsletter</h4>
+                    <p class="footer-news-desc">Stay informed on health tips and transformation guides.</p>
+                    <form id="newsletter-form" class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required class="form-control">
+                        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Saai Fitness Studio. All Rights Reserved. Old Money Athletic Aesthetics.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a> &bull;
+                    <a href="#">Terms & Rules</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal-overlay" id="booking-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close-btn" aria-label="Close Modal">&times;</button>
+            <div class="modal-header">
+                <div class="section-subtitle">SAAI FITNESS STUDIO</div>
+                <h3 class="modal-title" id="modal-title">Join Saai Fitness Studio</h3>
+                <p class="modal-sub">Fill out the form below to register your membership or book a session.</p>
+            </div>
+            
+            <form id="modal-form" class="modal-form">
+                <div class="form-group">
+                    <label for="modal-name">Full Name *</label>
+                    <input type="text" id="modal-name" class="form-control" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="modal-email">Email Address</label>
+                    <input type="email" id="modal-email" class="form-control" placeholder="john@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="modal-phone">Phone Number *</label>
+                    <input type="tel" id="modal-phone" class="form-control" placeholder="+91 98765 43210" required>
+                </div>
+                <div class="form-group">
+                    <label for="modal-selection">Select Program / Plan</label>
+                    <select id="modal-selection" class="form-control">
+                        <option value="CrossFit & PT (Velu Master)">CrossFit & Personal Training (Velu Master)</option>
+                        <option value="Natural Yoga (Natural Yoga Madam)">Natural Yoga Sessions (Natural Yoga Madam)</option>
+                        <option value="120 Days Challenge (Weight Loss)">120 Days Challenge (Weight Loss)</option>
+                        <option value="120 Days Challenge (Weight Gain)">120 Days Challenge (Weight Gain)</option>
+                        <option value="Monthly Plan (₹2,500)">Monthly Membership Plan (₹2,500)</option>
+                        <option value="Quarterly Plan (₹6,500)">Quarterly Membership Plan (₹6,500)</option>
+                        <option value="Half-Yearly Plan (₹11,500)">Half-Yearly Membership Plan (₹11,500)</option>
+                        <option value="Yearly VIP Plan (₹20,000)">Yearly VIP Membership Plan (₹20,000)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary form-submit-btn">
+                    <span>Submit & Join</span> <i class="fa-solid fa-check"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Gallery Lightbox Modal -->
+    <div class="lightbox-overlay" id="lightbox-modal">
+        <button class="lightbox-close" id="lightbox-close">&times;</button>
+        <button class="lightbox-nav lightbox-prev" id="lightbox-prev"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="lightbox-nav lightbox-next" id="lightbox-next"><i class="fa-solid fa-chevron-right"></i></button>
+        <div class="lightbox-content">
+            <img src="" alt="Gallery Preview" id="lightbox-img">
+            <div class="lightbox-caption">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-desc"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast-container" id="toast-container">
+        <div class="toast-card" id="toast-card">
+            <div class="toast-icon"><i class="fa-solid fa-circle-check"></i></div>
+            <div class="toast-body">
+                <h4 id="toast-title">Success</h4>
+                <p id="toast-message">Operation completed successfully.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Gym Location Configuration Modal -->
+    <div class="modal-overlay" id="admin-modal">
+        <div class="modal-content admin-modal-content">
+            <button class="modal-close" id="admin-modal-close" aria-label="Close Admin Modal">&times;</button>
+            <div class="modal-header">
+                <div class="section-subtitle">ADMINISTRATOR CONTROL</div>
+                <h3 class="modal-title"><i class="fa-solid fa-map-location-dot"></i> Gym Location & Geofence</h3>
+                <p class="modal-sub">Configure geographical boundaries, permitted attendance radius, and gym timezone for Saai Fitness Studio.</p>
+            </div>
+            
+            <form id="admin-config-form" class="modal-form" novalidate>
+                <div class="form-group" id="admin-pin-group">
+                    <label for="admin-pin">Admin Security Passcode *</label>
+                    <input type="password" id="admin-pin" class="form-control" placeholder="Enter Admin Passcode (Default: admin123)" required>
+                </div>
+
+                <div class="config-grid">
+                    <div class="form-group">
+                        <label for="gym-latitude">Gym Latitude *</label>
+                        <input type="number" step="0.0000001" id="gym-latitude" class="form-control" value="13.0827" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gym-longitude">Gym Longitude *</label>
+                        <input type="number" step="0.0000001" id="gym-longitude" class="form-control" value="80.2707" required>
+                    </div>
+                </div>
+
+                <div class="config-grid">
+                    <div class="form-group">
+                        <label for="gym-radius">Permitted Radius (Meters) *</label>
+                        <input type="number" id="gym-radius" class="form-control" value="150" min="10" max="5000" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gym-timezone">Gym Timezone *</label>
+                        <input type="text" id="gym-timezone" class="form-control" value="Asia/Kolkata" required>
+                    </div>
+                </div>
+
+                <div class="admin-helper-actions">
+                    <button type="button" id="detect-current-coords-btn" class="btn btn-secondary btn-sm">
+                        <i class="fa-solid fa-crosshairs"></i> Set Coordinates to My Current Device GPS
+                    </button>
+                    <div class="demo-testing-toggle-wrapper">
+                        <label class="toggle-label" for="simulated-location-toggle">
+                            <input type="checkbox" id="simulated-location-toggle">
+                            <span class="toggle-text"><i class="fa-solid fa-laptop-code"></i> Developer Demo Mode (Simulate Presence Within Gym Radius for Testing)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary form-submit-btn" id="save-admin-config-btn">
+                    <span>Save Location Configuration</span> <i class="fa-solid fa-floppy-disk"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Firebase App & Services (v10 Compat) -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-functions-compat.js"></script>
+
+    <!-- Firebase Configuration & Attendance Service -->
+    <script src="firebase-config.js"></script>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
